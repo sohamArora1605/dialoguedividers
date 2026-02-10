@@ -1,0 +1,12 @@
+numpy>=1.24.0
+scipy>=1.10.0
+soundfile>=0.12.1
+librosa>=0.10.0
+resampy>=0.4.2
+audioread>=3.0.0
+pydub>=0.25.1
+soxr>=0.3.5; platform_system!="Windows"  # soxr is often optional or tricky on Windows, but let's try or keep it optional
+tqdm>=4.65.0
+jsonschema>=4.17.0
+rich>=13.3.0
+pandas>=2.0.0
