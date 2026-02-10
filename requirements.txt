@@ -1,6 +1,5 @@
-torch
-torchaudio
-numpy
+# ---- Core numeric stack ----
+numpy==1.26.4
 scipy
 scikit-learn
 pandas
@@ -8,6 +7,16 @@ matplotlib
 tqdm
 pyyaml
 tensorboard
-simple-diarizer
+
+# ---- PyTorch (CUDA 12.1) ----
+torch==2.5.1+cu121
+torchaudio==2.5.1+cu121
+
+# ---- Diarization & Speech ----
+pyannote.audio==3.1
 speechbrain
-pyannote.audio
+simple-diarizer
+huggingface_hub==0.19.4
+
+# pip install -r requirements.txt --extra-index-url https://download.pytorch.org/whl/cu121
+# NOTE: Use the abouve pip command to install torch with cuda
